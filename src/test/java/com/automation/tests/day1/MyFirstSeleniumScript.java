@@ -6,11 +6,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class MyFirstSeleniumScript {
 
     public static void main(String[] args) {
-        //setup chromedriver
+// 1st. setup chromedriver
         WebDriverManager.chromedriver().setup();
-        //create chromedriver object
+
+        // 2nd. create chromedriver object
         ChromeDriver driver = new ChromeDriver();
-        //open some website
-        driver.get("http://google.com");
+
+        // 3rd open a website (ex."google")
+        driver.get("https://google.com");
+
     }
+
 }
