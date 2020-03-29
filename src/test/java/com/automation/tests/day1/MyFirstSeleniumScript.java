@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class MyFirstSeleniumScript {
 //test commit
+
     public static void main(String[] args) {
 // 1st. setup chromedriver
         WebDriverManager.chromedriver().setup();
