@@ -8,7 +8,7 @@ public class MyFirstSeleniumScript {
     //test commit
 
     public static void main(String[] args) {
-// 1st. setup chromedriver
+        // 1st. setup chromedriver
         WebDriverManager.chromedriver().setup();
 
         // 2nd. create chromedriver object

@@ -11,6 +11,7 @@ public class JumpToTheNewWindow {
     public static void main(String[] args) throws Exception{
         WebDriverManager.chromedriver().setup();
 
+        //The browser opens at this stage. When creating the WebDriver object.
         WebDriver driver = new ChromeDriver();
 
         driver.get("http://practice.cybertekschool.com/open_new_tab");
@@ -22,9 +23,10 @@ public class JumpToTheNewWindow {
         String windowHandle = driver.getWindowHandle();
 
         System.out.println(windowHandle);
-        //getWindowHandles() - returns id's of all currently opened windows
-        //Set - doesn't allow duplicates
 
+        //The Set.<String> (variable name here) = driver.getWindowHandles()
+        // is a method that - returns id's of all currently opened windows
+        //Set - doesn't allow for duplicates !!!
         Set<String> windowHandles = driver.getWindowHandles();
 
         System.out.println(windowHandles);
@@ -40,7 +42,7 @@ public class JumpToTheNewWindow {
             }
         }
         System.out.println("AFTER SWITCH :"+driver.getCurrentUrl());
-    // break until 5:02
+
 
 //        driver.close();
         driver.quit();

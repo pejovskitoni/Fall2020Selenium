@@ -16,6 +16,6 @@ public class QuitVsClose {
         Thread.sleep(5000);
 
 //        driver.close(); will close only one window
-        driver.quit(); //to close all windows
+        driver.quit(); //to close all windows !!!
     }
 }
